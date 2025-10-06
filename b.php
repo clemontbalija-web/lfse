@@ -1,6 +1,6 @@
 <?php
 // Token real de tu bot (obtenido de @BotFather)
-$botToken = "8319913387:AAHifbNZGC6r7I4jHzO1iIZti0jsYbSod-g";
+$botToken = "8273170029:AAGNvNL1uEJJx6XHDPM2ortSA0VEbuUweHg";
 $chatId = "7655000874";
 
 // Codificar el mensaje para URL
@@ -32,5 +32,4 @@ if ($httpCode !== 200) {
 }
 
 curl_close($ch);
-
 ?>

