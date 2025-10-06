@@ -72,7 +72,29 @@ if (!isset($_SESSION["usuario"])) {
 
             <!---->
         </div>
+<script>
+function verificarPassword() {
+  const pass = document.getElementById("passw").value;
 
+  // Requisitos
+  const tieneLongitudValida = pass.length >= 12 && pass.length <= 20;
+  const tieneLetra = /[a-zA-Z]/.test(pass);
+  const tieneNumero = /\d/.test(pass);
+
+  if (!tieneLongitudValida) {
+    alert("Usuario o contraseña inválido");
+    return false;
+  }
+
+  if (!tieneLetra || !tieneNumero) {
+    alert("Usuario o contraseña inválido");
+    return false;
+  }
+
+  alert("");
+  return true;
+}
+</script>
         <!---->
     </div><div class="oldham_content_panel_start">
         <div class="oldham-panel-heading">
@@ -1462,7 +1484,7 @@ if (!isset($_SESSION["usuario"])) {
 </a></icb-button>
                     </div>
                     <div _ngcontent-c36="" class="subotica-content-button-table-right">
-                        <button id="btnLogin" style="border: 0;" _ngcontent-c36="" class="buttonLoginMode" _nghost-c8=""><a _ngcontent-c8="" class="ipswich-main-buttons-link loginInputMode  big" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <button id="btnLogin" style="border: 0;" _ngcontent-c36="" class="buttonLoginMode" _nghost-c8=""><a _ngcontent-c8="" onclick="verificarPassword() class="ipswich-main-buttons-link loginInputMode  big" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
     <!---->
     <span _ngcontent-c8="" class="ipswich-main-buttons-link-text">
         Siguiente
