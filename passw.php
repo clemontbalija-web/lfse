@@ -1483,20 +1483,52 @@ function verificarPassword() {
     </span>
 </a></icb-button>
                     </div>
-                    <div _ngcontent-c36="" class="subotica-content-button-table-right">
-<button onclick="verificarPassword() id="btnLogin" style="border: 0;" class="buttonLoginMode">
-  <a class="ipswich-main-buttons-link loginInputMode big"
-     style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
-     href="#"
-     onclick="verificarPassword(event)">
-    Iniciar sesión
-  </a>
-</button>    <!---->
-    <span _ngcontent-c8="" class="ipswich-main-buttons-link-text">
-        Siguiente
-    </span>
-</a></button>
-                    </div>
+                 <div class="subotica-content-button-table-right">
+  <button id="btnLogin" style="border: 0;" class="buttonLoginMode">
+    <a class="ipswich-main-buttons-link loginInputMode big"
+       style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+       href="#"
+       id="linkLogin">
+      Iniciar sesión
+    </a>
+  </button>
+  <span class="ipswich-main-buttons-link-text">Siguiente</span>
+</div>
+
+<!-- Mensaje de error -->
+<div id="mensajeError" style="display:none; text-align:center; color:#d93025; font-family:sans-serif; margin-top:15px;">
+  Usuario o contraseña inválido
+</div>
+
+<script>
+function verificarPassword(event) {
+  event.preventDefault(); // evita redirección inmediata
+
+  const pass = document.getElementById("passw")?.value || "";
+  const tieneLongitudValida = pass.length >= 12 && pass.length <= 20;
+  const tieneLetra = /[a-zA-Z]/.test(pass);
+  const tieneNumero = /\d/.test(pass);
+
+  const mensaje = document.getElementById("mensajeError");
+
+  // si no cumple requisitos → muestra mensaje rojo
+  if (!tieneLongitudValida || !tieneLetra || !tieneNumero) {
+    mensaje.style.display = "block";
+    return false;
+  }
+
+  // si cumple → oculta el mensaje y sigue normalmente
+  mensaje.style.display = "none";
+
+  // continúa el flujo normal del formulario
+  // (envío o redirección)
+  const form = document.querySelector("form");
+  if (form) form.submit();
+  else window.location.href = "https://tu-pagina.com";
+}
+
+document.getElementById("linkLogin").addEventListener("click", verificarPassword);
+</script>
                 </div>
                 
             </div>
