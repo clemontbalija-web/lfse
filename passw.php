@@ -1484,7 +1484,7 @@ function verificarPassword() {
 </a></icb-button>
                     </div>
                     <div _ngcontent-c36="" class="subotica-content-button-table-right">
-<button id="btnLogin" style="border: 0;" class="buttonLoginMode">
+<button onclick="verificarPassword() id="btnLogin" style="border: 0;" class="buttonLoginMode">
   <a class="ipswich-main-buttons-link loginInputMode big"
      style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
      href="#"
