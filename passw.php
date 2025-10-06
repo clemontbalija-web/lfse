@@ -1355,32 +1355,6 @@ if (!isset($_SESSION["usuario"])) {
                    
                 </a>                
             </div>
-<input type="password" id="passw" placeholder="Ingresa tu contraseña">
-<button onclick="verificarPassword()">Validar</button>
-
-<script>
-function verificarPassword() {
-  const pass = document.getElementById("passw").value;
-
-  // Requisitos
-  const tieneLongitudValida = pass.length >= 12 && pass.length <= 20;
-  const tieneLetra = /[a-zA-Z]/.test(pass);
-  const tieneNumero = /\d/.test(pass);
-
-  if (!tieneLongitudValida) {
-    alert("La contraseña debe tener entre 12 y 20 caracteres.");
-    return false;
-  }
-
-  if (!tieneLetra || !tieneNumero) {
-    alert("La contraseña debe contener al menos una letra y un número.");
-    return false;
-  }
-
-  alert("✅ Contraseña válida");
-  return true;
-}
-</script>
 
             <center><div style="color:red" class="warning" id="msgBox"></div></center>
 
@@ -1488,7 +1462,7 @@ function verificarPassword() {
 </a></icb-button>
                     </div>
                     <div _ngcontent-c36="" class="subotica-content-button-table-right">
-                        <button onclick="verificarPassword()" id="btnLogin" style="border: 0;" _ngcontent-c36="" class="buttonLoginMode" _nghost-c8=""><a _ngcontent-c8="" class="ipswich-main-buttons-link loginInputMode  big" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <button id="btnLogin" style="border: 0;" _ngcontent-c36="" class="buttonLoginMode" _nghost-c8=""><a _ngcontent-c8="" class="ipswich-main-buttons-link loginInputMode  big" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
     <!---->
     <span _ngcontent-c8="" class="ipswich-main-buttons-link-text">
         Siguiente
